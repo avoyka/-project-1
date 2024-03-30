@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #container {
+background-color: aqua;
+position: absolute;
+top: 30px;
+left: 30px;
+bottom: 30px;
+right: 30px;
+ }       
+ #corner-left{
+  position: absolute;  
+  top: 50px;
+  left: 50px;
+  background-color: blue;
+  width: 50px;
+ height: 50px;
+ 
+ }
+
+ #corner-right{
+position: absolute;
+top: 50px;
+right: 50px;
+background-color: blue; 
+width: 50px;
+height: 50px;
+ }
+ #corner-right:hover{ 
+ left: 350px;
+ width: 50px;  
+ background-color: chocolate;
+ }
+ #midle{
+ position: absolute;
+ top: 300px;
+ height: 20px;
+ left: 20px;
+ right: 20px;
+background-color: blue;
+ }
+ #midle:hover{
+ top: 100px;
+ bottom: 60px;
+ height: 20px; 
+ transition: 1s; 
+background-color: brown;
+ }
+    </style>
+
+</head>
+<body>
+    <div id="container"></div>
+    <div id="corner-left"></div>
+    <div id="corner-right"></div>
+    <div id="midle"></div>
+</body>
+</html>
