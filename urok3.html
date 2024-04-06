@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+        width: 200px; 
+        height: 200px;
+        position: absolute;
+        top: 200px;    
+        left: 300px; 
+        background-color: blue;
+        transition: 3s;
+        }
+       #div1:hover{
+       transform: rotateZ(3600deg);
+       }
+       .redBack{
+border-radius: 100px;
+       }
+    </style>
+</head>
+<body>
+ <div id="div1"></div>  
+ <div class="redBack"></div>
+ <button onclick="document.getElementById('div1').style.transform='translateX(200px)'">move left</button> 
+ <button onclick="document.getElementById('div1').style.transform='rotateZ(3600deg)'">move rotate</button> 
+ <button onclick="document.getElementById('div1').classList.toggle('redBack')">circle</button>
+</body>
+</html>
