@@ -1,92 +1,28 @@
-#body {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    background-color: crimson;
-    height: 250px;
-    border-radius: 50%;
-    overflow: hidden;
+.animation1{
+ background-color: crimson;  
+ height: 100px; 
+ width: 100px;
+ animation-name: translate;
+ animation-duration: 2s;
+ animation-iteration-count: 10s;
+ animation-direction: alternate;
+ animation-timing-function: linear;
 }
 
-#leg1 {
-    left: 100px;
-    position: absolute;
-    background-color: crimson;
-    height: 300px;
-    width: 50px;
-    top: 150px;
+@keyframes translate {
+   0%{
+    transform: translate(0,0);
+   }
+   25%{
+    transform: translate(340px,0); 
+   }
+   50%{
+    transform: translate(300px,350px); background-color: darkseagreen;
+   }
+   75%{
+    transform: translate(0,20px); rotate: 60deg;
+   }
+   100%{
+    transform: translate(0,0);
+   }
 }
-
-#leg2 {
-    background-color: crimson;
-    position: absolute;
-    height: 300px;
-    right: 100px;
-    width: 50px;
-    top: 150px;
-}
-
-#klesna1 {
-    position: absolute;
-    background-color: rgb(27, 220, 20);
-    height: 45px;
-    width: 20px;
-    top: 300px;
-}
-
-#klesna2 {
-    position: absolute;
-    background-color: rgb(60, 220, 20);
-    height: 45px;
-    width: 20px;
-    right: 1px;
-    top: 300px;
-}
-
-#klesna3 {
-    position: absolute;
-    background-color: rgb(60, 220, 20);
-    height: 45px;
-    width: 20px;
-    right: 1px;
-    top: 300px;
-}
-
-#klesna4 {
-    position: absolute;
-    background-color: rgb(27, 220, 20);
-    height: 45px;
-    width: 20px;
-    top: 300px;
-}
-
-img {
- width: 100%; 
- transform: translateY(-200px);  
-}
-#eye1{
-position: absolute;
-background-color: rgb(0, 162, 255);
-height: 100px;
-width: 100px;
-border-radius: 100%;
-left: 500px;
-transition: 1s;
-}
-
-#eye2{
-    position: absolute;
-    background-color: rgb(0, 162, 255);
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    right: 500px;
-    transition: 1s;
-    }
-    #eye1:hover{
-     transform: scaleY(0);   
-    }
-
-    #eye2:hover{
-        transform: scaleY(0);   
-       }
