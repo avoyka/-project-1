@@ -1,0 +1,52 @@
+.doroga{
+position: absolute;
+width: 1500px;
+height: 100px;
+background-color: forestgreen;
+bottom: 1px;
+}
+.tractor{
+position: absolute;  
+width: 200px;
+height: 200px;
+bottom: 100px;  
+}
+.shrek{
+position: absolute; 
+width: 100px;
+height: 100px;
+bottom: 220px;   
+}
+.tractor2{
+position: absolute;
+height: 200px;
+width: 200px;
+right: 1px;
+bottom: 100px;
+}
+.bomsh{
+position: absolute;
+height: 200px;
+width: 200px;
+right: 1px;
+bottom: 240px;
+}
+.shrechara{
+animation-name: shrek; 
+animation-duration: 2s;
+ animation-iteration-count: infinite;  
+}
+
+
+@keyframes shrek {
+    0%{
+        transform: translateX(0px);
+       }
+    /* 50%{
+    transform: translate(100,0);
+    } */
+    100%{
+    transform: translateX(300px);
+    } 
+
+}
