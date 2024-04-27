@@ -1,0 +1,30 @@
+.class1{
+background-color: rgb(226, 202, 202);
+/* width: 30px; */
+height: 30px;
+display: inline;
+}
+.class2{
+    background-color: rgb(243, 0, 0);
+    /* width: 30px; */
+    height: 30px;
+    }
+.container{
+height: 500px;
+flex-direction: column;
+display: flex;
+width: 500px;
+justify-content: center;
+Gap: 30px;
+/* flex-wrap: wrap; */
+/* align-items: center; */
+border:1px solid red
+}
+.child{
+height: 100px;
+border:1px solid red
+}
+.product title{
+font-family: ;
+text-align: center;
+}
