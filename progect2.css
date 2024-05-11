@@ -1,0 +1,41 @@
+body {
+    background-color: beige;
+    margin: 0;
+}
+
+.header-container {
+    background-color: white;
+    padding: 10px 20px;
+    padding-top: 10px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+}
+
+.location-image {
+    width: 50px;
+}
+.arrow{
+width: 20px;
+}
+
+.arrow:hover{
+rotate: 100deg;
+}
+.name{
+text-decoration: underline;
+}
+.plushka{
+position: absolute;
+right: 1000px;
+top: 12px;
+}
+.obmin{
+    position: absolute;
+    right: 10000px;
+    top: 12px;
+}
